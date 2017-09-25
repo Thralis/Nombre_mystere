@@ -1,0 +1,6 @@
+Les idées pour améliorer ce mini jeu developpé en C étaient:
+
+-faire un compteur de "coups"
+-rajouter un mode deux joueurs
+-créer plusieurs niveaux de difficulté
+-Pouvoir refaire une autre partie
