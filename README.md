@@ -12,7 +12,7 @@ int main ( int argc, char** argv )
 
 {
 
-    int nombreMystere = 0, nombreEntre = 0;
+    int nombreMystere = 0, nombreEntre = 0, nombreDeCoups = 0;
 
     const int MAX = 100, MIN = 1;
 
@@ -35,8 +35,12 @@ int main ( int argc, char** argv )
         // On demande le nombre
 
         printf("Quel est le nombre ? ");
+        
+        fflush (stdin);
 
         scanf("%d", &nombreEntre);
+        
+        nombreDeCoups++;
 
 
         // On compare le nombre entré avec le nombre mystère
@@ -52,7 +56,7 @@ int main ( int argc, char** argv )
 
         else
 
-            printf ("Bravo, vous avez trouve le nombre mystere !!!\n\n");
+            printf ("Bravo, vous avez trouve le nombre mystere %d coups!\n\n", nombreDeCoups);
 
     } while (nombreEntre != nombreMystere);
 
